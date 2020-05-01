@@ -14,7 +14,6 @@ class ElasticSearchQcResultsRepositoryTest extends AnyWordSpec with Matchers wit
   "ElasticSearchQcResultsRepository.save" should {
     def generateRawCheckResult(suffix: String, status: CheckStatus) = CheckResult(status, s"checkResult$suffix", s"checkDescription$suffix")
 
-    val someIndex = "index_name"
     implicit val patienceConfig: PatienceConfig = PatienceConfig(5 seconds, 1 second)
 
     cleanIndex(someIndex)

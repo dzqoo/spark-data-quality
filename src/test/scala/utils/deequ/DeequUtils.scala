@@ -1,4 +1,4 @@
-package utils
+package utils.deequ
 
 import qualitychecker.DeequCheckStatus
 import qualitychecker.checks.CheckStatus
